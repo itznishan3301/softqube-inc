@@ -94,8 +94,8 @@
                                 <i class="absolute fa fa-search text-gray-400 top-5 left-4"></i>
                                 <input type="text"
                                     class="bg-white h-14 w-full px-12 rounded-lg focus:outline-1 hover:cursor-pointer"
-                                    name="" placeholder="Search Here" id="btn-search">
-                                <button class="btn btn-primary bg-btn-color border-0">Search</button>
+                                    name="" placeholder="Search Here" id="input-field">
+                                <button id="btn-search" onclick="handleSearch()" class="btn btn-primary bg-btn-color border-0">Search</button>
                             </div>
                         </div>
 
@@ -106,9 +106,15 @@
 
         </section>
 
+        <!-- Search Result Here -->
+
         <!-- Phones Cards Section Here -->
 
         <section>
+
+            <div id="phone-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 mb-16">
+
+            </div>
 
         </section>
 
@@ -167,6 +173,7 @@
 
 
     <script src="./js/app.js"></script>
+    <script src="./js/search.js"></script>
 </body>
 
 </html>
